@@ -49,8 +49,7 @@ class ApiRequest
              
             return $this->prepareResponse($result);
         } catch (\Throwable $th) {
-            dd($th);
-            Log::error($th->getMessage(). " on line: #".$th->getMessage() . " => ". $th->getFile());
+            Log::error($th->getMessage());
         }
     }
 
