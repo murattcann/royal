@@ -38,7 +38,7 @@ class BookController extends Controller
 
     public function store(BookRequest $request){      
         $this->bookRequest->setTitle($request->title);
-        $this->bookRequest->setFormat($request->title);
+        $this->bookRequest->setFormat($request->get("format"));
         $this->bookRequest->setReleaseDate($request->release_date);
         $this->bookRequest->setDescription($request->description);
         $this->bookRequest->setNumberOfPages($request->number_of_pages);
