@@ -1,5 +1,5 @@
 @extends("layout")
-@section("pageTitle", "Author")
+@section("pageTitle", $author->first_name. " ". $author->last_name)
 @section("content")
 <div class="row justify-content-center d-flex align-items-center mt-5">
     <div class="col-sm-12">
