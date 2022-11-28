@@ -34,7 +34,7 @@
                 </tr>
             @empty
                 <tr>
-                    <td colspan="6">
+                    <td colspan="7">
                         <div class="alert alert-warning">
                             There is no book yet.
                         </div>
