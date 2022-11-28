@@ -5,6 +5,9 @@
     <li>
         <code>composer install</code>
     </li>
+     <li>
+        <code>php artisan key:generate</code>
+    </li>
     <li>
         <code>php artisan serve --host=127.0.0.1 --port=8000</code>
     </li>
