@@ -16,7 +16,7 @@
                 <tr>
                     <td>{{$loop->index + 1 }}</td>
                     <td>{{$book->title}}</td>
-                    <td>{{$book->release_date}}</td>
+                    <td>{{date("d/m/Y", strtotime($book->release_date))}}</td>
                     <td>{{$book->isbn}}</td>
                     <td>{{$book->format}}</td>
                     <td>{{$book->number_of_pages}}</td>
