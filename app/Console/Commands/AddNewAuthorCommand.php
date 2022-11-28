@@ -21,7 +21,7 @@ class AddNewAuthorCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'This command inserts new author record to API system';
 
     /**
      * Execute the console command.
