@@ -27,7 +27,7 @@
                                     <td>{{$loop->index + 1 }}</td>
                                     <td>{{$author->first_name . " ". $author->last_name}}</td>
                                     <td>{{$author->gender}}</td>
-                                    <td>{{$author->birthday}}</td>
+                                    <td>{{date("d/m/Y", strtotime($author->birthday))}}</td>
                                     <td>{{$author->place_of_birth}}</td>
                                     <td>
                                         <a href="{{route("authors.detail",["authorId" => $author->id])}}" class="btn btn-outline-success">

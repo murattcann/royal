@@ -35,7 +35,7 @@
                                 
                                 <tr>
                                     <td>Birth Date</td>
-                                    <td>{{ $author->birthday}}</td>
+                                    <td>{{ date("d/m/Y", strtotime($author->birthday))}}</td>
                                 </tr>
                                  <tr>
                                     <td>Biography</td>
